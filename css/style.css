@@ -63,4 +63,9 @@ body {
 .promo-wrapper {
   background-image: url(../images/bg_main.jpg);
   background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.promo_text {
+  color: #fff;
 }
