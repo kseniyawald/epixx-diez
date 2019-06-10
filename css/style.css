@@ -59,3 +59,8 @@ body {
 .main-nav__item:last-child .main-nav__link {
 	padding-right: 0;
 }
+
+.promo-wrapper {
+  background-image: url(../images/bg_main.jpg);
+  background-repeat: no-repeat;
+}
