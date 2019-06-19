@@ -74,7 +74,7 @@ h2:after {
   width: 230px;
   height: 1px;
   background-color: #d2af3e;
-  bottom: 5px;
+ 
 }
 
 h3 {
@@ -168,4 +168,56 @@ h3 {
 
 .nav {
   display: none;
+}
+
+section {
+  position: relative;
+}
+
+.vocal {
+  background-image: url(../images/directions_card_img_2_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 288px;
+  height: 144px;
+}
+
+.guitar {
+  background-image: url(../images/directions_card_img_1_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 288px;
+  height: 144px;
+}
+
+.piano {
+  background-image: url(../images/directions_card_img_3_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 212px;
+  height: 144px;
+}
+
+.team {
+  background-image: url(../images/advantages_card_img_1_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 288px;
+  height: 144px;
+}
+
+.result {
+  background-image: url(../images/advantages_card_img_2_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 288px;
+  height: 144px;
+}
+
+.studio {
+  background-image: url(../images/advantages_card_img_3_sm.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 212px;
+  height: 144px;
 }
