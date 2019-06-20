@@ -96,11 +96,33 @@ h3 {
 
 .button-grow {
   position: absolute;
-  left: 220px;
-  bottom: 30px;
+  left: 200px;
+  bottom: 60px;
+  padding-right: 35px;
   color: #000;
   transform: rotate(-90deg);
   text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.button-temp {
+  position: absolute;
+  left: 195px;
+  bottom: 65px;
+  padding-right: 70px;
+  color: #000;
+  transform: rotate(-90deg);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.temp {
+  position: relative;
 }
 
 .logo-burger {
