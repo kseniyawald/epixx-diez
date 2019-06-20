@@ -6,6 +6,11 @@
   <title>DIEZ</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <head>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<b769bae5-9c40-44d6-b4f9-2012b80445ca>&lang=ru_RU" type="text/javascript">
+    </script>
+    
+</head>
 </head>
 <body>
     <div class="promo">
@@ -74,8 +79,12 @@
     </section>
 
     <section class="contacts">
-        <span>СПб, 6-я линия ВО, 42</span>
-        <a href="">+7 (812) 566 56 56</a>
+        <div class="contacts-text">
+            <p>СПб, 6-я линия ВО, 42 <br>
+            <a href="" class="phone">+7 (812) 566 56 56</a> 
+            </p>
+        </div>
+        <div id="map" style="width: 600px; height: 400px"></div>
         <a href="" class="button">ВВОДНЫЙ УРОК</a>
     </section>
 </body>

@@ -55,6 +55,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  padding-left: 10px;
 }
 
 h2:before {
@@ -259,9 +260,21 @@ section {
   background-image: url(../images/advantages_card_img_3_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 212px;
+  width: 212px2
   height: 144px;
   color: #fff;
   padding: 15px 15px;
   position: relative;
 }
+
+
+.contacts-text {
+  line-height: 24px;
+  padding-left: 10px;
+}
+
+.phone {
+  text-decoration: none;
+  color: #000;
+}
+
