@@ -37,7 +37,6 @@ header {
   color: #d2af3e;
   text-decoration: none;
   font-size: 30px;
- 
   font-family: Prata, serif;
 }
 
@@ -74,7 +73,6 @@ h2:after {
   width: 230px;
   height: 1px;
   background-color: #d2af3e;
- 
 }
 
 h3 {
@@ -84,15 +82,25 @@ h3 {
 .button {
   background-color: #d2af3e;
   display: block;
-}
-
-.button-promo {
-  color: #fff;
-  text-decoration: none;
-  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-promo {
+  text-decoration: none;
+  width: 100%;
+}
+
+.button-grow {
+  position: absolute;
+  left: 220px;
+  bottom: 30px;
+  color: #000;
+  transform: rotate(-90deg);
+  text-align: left;
 }
 
 .logo-burger {
@@ -180,6 +188,9 @@ section {
   background-size: 100%;
   width: 288px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
+
 }
 
 .guitar {
@@ -188,6 +199,8 @@ section {
   background-size: 100%;
   width: 288px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
 }
 
 .piano {
@@ -196,6 +209,8 @@ section {
   background-size: 100%;
   width: 212px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
 }
 
 .team {
@@ -204,6 +219,8 @@ section {
   background-size: 100%;
   width: 288px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
 }
 
 .result {
@@ -212,6 +229,8 @@ section {
   background-size: 100%;
   width: 288px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
 }
 
 .studio {
@@ -220,4 +239,7 @@ section {
   background-size: 100%;
   width: 212px;
   height: 144px;
+  color: #fff;
+  padding: 15px 15px;
+  position: relative;
 }
