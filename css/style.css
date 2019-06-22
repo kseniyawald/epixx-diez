@@ -55,7 +55,6 @@ h1 {
 
 h2 {
   font-size: 30px;
-  padding-left: 10px;
 }
 
 h2:before {
@@ -96,9 +95,6 @@ h3 {
 }
 
 .button-grow {
-  position: absolute;
-  left: 200px;
-  bottom: 60px;
   padding-right: 35px;
   color: #000;
   transform: rotate(-90deg);
@@ -205,11 +201,14 @@ section {
   position: relative;
 }
 
+.grow {
+  padding: 0 15px;
+}
+
 .vocal {
   background-image: url(../images/directions_card_img_2_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 288px;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
@@ -220,7 +219,6 @@ section {
   background-image: url(../images/directions_card_img_1_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 288px;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
@@ -230,17 +228,21 @@ section {
   background-image: url(../images/directions_card_img_3_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 212px;
+  width: 65%;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
+}
+
+
+.temp {
+  padding: 0 15px;
 }
 
 .team {
   background-image: url(../images/advantages_card_img_1_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 288px;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
@@ -250,7 +252,6 @@ section {
   background-image: url(../images/advantages_card_img_2_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 288px;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
@@ -260,11 +261,24 @@ section {
   background-image: url(../images/advantages_card_img_3_sm.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 212px2
   height: 144px;
   color: #fff;
   padding: 15px 15px;
   position: relative;
+}
+
+
+.video {
+  padding: 0 15px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 70px;
+    color: #00569C;
+    left: -100px;
+    top: -13px;
+    background: white;
+    position: absolute;
 }
 
 
