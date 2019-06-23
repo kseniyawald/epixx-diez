@@ -77,6 +77,7 @@ h2:after {
 
 h3 {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .button {
@@ -188,9 +189,23 @@ h3 {
   padding: 20px 15px 30px 15px;
 }
 
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.nav_list {
+  list-style-type: none;
+  background-color: #000;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
 .nav_item {
   color: #fff;
-  text-decoration: none;
+  line-height: 30px;
 }
 
 .nav {
@@ -278,7 +293,7 @@ section {
   height: 186px;
   width: 100%;
   color: #fff;
-  padding-top: 95px;
+  padding-top: 105px;
   padding-left: 10px;
 }
 
@@ -287,14 +302,15 @@ section {
 }
 
 .slick-prev:before, .slick-next:before {
-    font-size: 70px;
-    color: #00569C;
-    left: -100px;
-    top: -13px;
-    background: white;
-    position: absolute;
+    background-image: url(../images/next 85%.png);
+    background-repeat: no-repeat; 
 }
 
+.slick-prev, .slick-next {
+    font-size: 0;
+    border: none;
+    opacity: 0%;
+}
 
 .contacts-text {
   line-height: 24px;
