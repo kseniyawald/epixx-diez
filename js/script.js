@@ -19,13 +19,11 @@
 
 $(document).ready(function() {
 
-    $('.burger').click(function (){
+  $('.burger').click(function (){
+    $('.nav').slideToggle(); 
+    $(this).toggleClass('burger--open');
+  });
 
-        // console.log('Клик  клик');
-        //                         });
-         $('.nav').slideToggle();
-
-});
-    $('.video__gallery').slick();
+  $('.video__gallery').slick();
 
 });
