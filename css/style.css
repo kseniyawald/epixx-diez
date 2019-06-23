@@ -272,6 +272,20 @@ section {
   padding: 0 15px;
 }
 
+.video__item {
+  background-image: url(../images/video_card_img_1.jpg);
+  background-repeat: no-repeat;
+  height: 186px;
+  width: 100%;
+  color: #fff;
+  padding-top: 95px;
+  padding-left: 10px;
+}
+
+.video__text {
+  margin-top: 0px;
+}
+
 .slick-prev:before, .slick-next:before {
     font-size: 70px;
     color: #00569C;
