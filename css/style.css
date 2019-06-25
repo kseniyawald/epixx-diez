@@ -22,6 +22,10 @@
     font-style: normal;
 }
 
+*, html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -38,6 +42,7 @@ header {
   text-decoration: none;
   font-size: 30px;
   font-family: Prata, serif;
+  z-index: 1;
 }
 
 h1,
@@ -88,7 +93,8 @@ h3 {
 }
 
 .button {
-  background-color: #d2af3e;
+  background-color: #eec643;
+  box-sizing: border-box;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -102,18 +108,47 @@ h3 {
   width: 100%;
 }
 
+
+.button-grow-wrap {
+  position: relative;
+  flex-basis: 20.66666%;
+  background-color: #eec643;
+  margin-bottom: 40px;
+}
+
 .button-grow {
   position: absolute;
-  right: -31px;
-  bottom: 71px;
-  padding-right: 30px;
+  top: 100%;
+  transform-origin: 0 0;
   color: #000;
   transform: rotate(-90deg);
   text-align: left;
+  padding-right: 24px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.button-temp-wrap {
+  position: relative;
+  flex-basis: 20.66666%;
+  background-color: #eec643;
+  margin-bottom: 40px;
+}
+
+.button-temp {
+    position: absolute;
+    top: 100%;
+    transform-origin: 0 0;
+    color: #000;
+    transform: rotate(-90deg);
+    text-align: left;
+    padding-right: 24px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 .temp {
   position: relative;
@@ -211,21 +246,21 @@ a {
   right: 0;
   top: 0;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 55px;
 }
 
 .nav_list {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 5px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   width: 100%;
 }
 .nav_item {
   color: #fff;
-  line-height: 30px;
+  line-height: 38px;
+  letter-spacing: 1px;
 }
 
 section {
@@ -233,85 +268,79 @@ section {
 }
 
 .grow {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 15px;
+  justify-content: space-between;
+}
+
+
+.vocal,
+.guitar,
+.piano {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 144px;
+  color: #fff;
+  padding: 15px 15px;
+  margin-bottom: 15px;
+  flex-basis: 100%;
 }
 
 .vocal {
   background-image: url(../images/directions_card_img_2_sm.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 144px;
-  color: #fff;
-  padding: 15px 15px;
-
 }
 
 .guitar {
   background-image: url(../images/directions_card_img_1_sm.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 144px;
-  color: #fff;
-  padding: 15px 15px;
 }
 
 .piano {
   background-image: url(../images/directions_card_img_3_sm.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 65%;
-  height: 144px;
-  color: #fff;
-  padding: 15px 15px;
+  flex-basis: 73%;
+  margin-bottom: 40px;
+}
+
+.lections {
+  display: none;
 }
 
 
 .temp {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 15px;
+  justify-content: space-between;
 }
 
-.team {
-  background-image: url(../images/advantages_card_img_1_sm.jpg);
+
+.team,
+.result,
+.studio {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   height: 144px;
   color: #fff;
   padding: 15px 15px;
+  margin-bottom: 15px;
+  flex-basis: 100%;
+}
+
+.team {
+  background-image: url(../images/advantages_card_img_1_sm.jpg); 
 }
 
 .result {
   background-image: url(../images/advantages_card_img_2_sm.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 144px;
-  color: #fff;
-  padding: 15px 15px;
 }
 
 .studio {
   background-image: url(../images/advantages_card_img_3_sm.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 144px;
-  width: 65%;
-  color: #fff;
-  padding: 15px 15px;
-  position: relative;
+  flex-basis: 73%;
+  margin-bottom: 40px;
 }
-
-.button-temp {
-      position: absolute;
-    bottom: 72px;
-    right: -31px;
-    padding-right: 22px;
-    color: #000;
-    transform: rotate(-90deg);
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 
 
 .video {
@@ -329,9 +358,20 @@ section {
   height: 186px;
   width: 100%;
   color: #fff;
-  /*padding-top: 105px;*/
   padding-left: 10px;
+    position: relative;
 }
+
+
+.video__item:after {
+  content: ''; 
+  position: absolute; 
+  left: 108px; 
+  bottom: 75px; 
+  border: 20px solid transparent; 
+  border-left: 35px solid #eec643; 
+}
+
 .video__item-content {
   display: flex;
   flex-direction: column;
@@ -404,7 +444,7 @@ section {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .burger {
     display: none;
   }
