@@ -64,13 +64,14 @@ h2 {
   font-weight: normal;
   position: relative;
   padding-left: 10px;
+  max-width: 90%;
 }
 
 h2:before {
   position: absolute;
   content: "";
   display: block;
-  width: 70%;
+  width: 110%;
   height: 1px;
   background-color: #d2af3e;
   margin-top: -5px;
@@ -81,7 +82,7 @@ h2:after {
   position: absolute;
   content: "";
   display: block;
-  width: 70%;
+  width: 110%;
   height: 1px;
   background-color: #d2af3e;
   left: -1px;
@@ -274,7 +275,6 @@ section {
 .grow {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px;
   justify-content: space-between;
 }
 
@@ -527,9 +527,7 @@ section {
   }
 
   .grow {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+   
   }
 
   .button-grow-wrap {
