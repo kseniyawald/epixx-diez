@@ -275,8 +275,15 @@ section {
 .grow {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 15px;
 }
+
+.grow-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 
 
 .vocal,
@@ -527,8 +534,15 @@ section {
   }
 
   .grow {
-   
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
   }
+
+  .grow-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
   .button-grow-wrap {
     transform: (rotate(90deg));
